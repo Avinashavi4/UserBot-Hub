@@ -1,0 +1,30 @@
+﻿import React, { useState, useEffect, useRef, useCallback } from 'react';
+import { Mic, MicOff, Volume2, VolumeX, Globe, BookOpen, X, Play, Square, Settings, MessageCircle } from 'lucide-react';
+
+const API_BASE = '/api';
+
+// Supported languages
+const LANGUAGES = [
+  { code: 'en', name: 'English', flag: '' },
+  { code: 'hi', name: 'Hindi', flag: '' },
+  { code: 'ta', name: 'Tamil', flag: '' },
+  { code: 'te', name: 'Telugu', flag: '' },
+  { code: 'bn', name: 'Bengali', flag: '' },
+  { code: 'mr', name: 'Marathi', flag: '' },
+  { code: 'gu', name: 'Gujarati', flag: '' },
+  { code: 'kn', name: 'Kannada', flag: '' },
+  { code: 'ml', name: 'Malayalam', flag: '' },
+  { code: 'pa', name: 'Punjabi', flag: '' },
+  { code: 'es', name: 'Spanish', flag: '' },
+  { code: 'fr', name: 'French', flag: '' },
+  { code: 'de', name: 'German', flag: '' },
+  { code: 'it', name: 'Italian', flag: '' },
+  { code: 'pt', name: 'Portuguese', flag: '' },
+  { code: 'ja', name: 'Japanese', flag: '' },
+  { code: 'ko', name: 'Korean', flag: '' },
+  { code: 'zh', name: 'Mandarin', flag: '' },
+  { code: 'ar', name: 'Arabic', flag: '' },
+  { code: 'ru', name: 'Russian', flag: '' },
+  { code: 'th', name: 'Thai', flag: '' },
+  { code: 'vi', name: 'Vietnamese', flag: '' },
+];
