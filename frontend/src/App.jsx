@@ -143,7 +143,7 @@ function App() {
             <Bot className="w-6 h-6" />
           </div>
           <div>
-            <h1 className="text-xl font-bold">AI Hub</h1>
+            <h1 className="text-xl font-bold">UserBot Hub</h1>
             <p className="text-xs text-slate-400">Multi-Model AI Assistant</p>
           </div>
         </div>
@@ -216,7 +216,7 @@ function App() {
             <div className="p-4 bg-gradient-to-br from-blue-500/20 to-purple-600/20 rounded-full mb-6">
               <Brain className="w-16 h-16 text-blue-400" />
             </div>
-            <h2 className="text-2xl font-bold mb-2">Welcome to AI Hub</h2>
+            <h2 className="text-2xl font-bold mb-2">Welcome to UserBot Hub</h2>
             <p className="text-slate-400 max-w-md mb-6">
               One interface, all AI models. Chat with me or use the feature buttons above.
             </p>
@@ -322,7 +322,7 @@ function App() {
           </button>
         </div>
         <p className="text-center text-xs text-slate-500 mt-2">
-          AI Hub automatically selects the best AI model for your query
+          UserBot Hub automatically selects the best AI model for your query
         </p>
       </footer>
     </div>
